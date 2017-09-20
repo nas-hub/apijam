@@ -86,6 +86,15 @@ _____
    **Policy Configuration**
     ```
         <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+        <RegularExpressionProtection async="false" continueOnError="false" enabled="true" name="Threatening-Content-Protection">
+            <DisplayName>Threatening Content Protection</DisplayName>
+            <Properties/>
+            <Source>request</Source>
+            <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+            <QueryParam name="query">
+                <Pattern>[\s]*(?i)((delete)|(exec)|(drop\s*table)|(insert)|(shutdown)|(update)|(\bor\b))</Pattern>
+            </QueryParam>
+        </RegularExpressionProtection>
 
     ```
    
@@ -98,29 +107,30 @@ _____
     
    **Policy Configuration**
     ```
-        <XMLThreatProtection async="false" continueOnError="false" enabled="true" name="XML-Complexity-Attack-Protection">
-               <DisplayName>XML Complexity Attack Protection</DisplayName>
-               <NameLimits>
-                  <Element>50</Element>
-                  <Attribute>10</Attribute>
-                  <NamespacePrefix>10</NamespacePrefix>
-                  <ProcessingInstructionTarget>5</ProcessingInstructionTarget>
-               </NameLimits>
-               <Source>request</Source>
-               <StructureLimits>
-                  <NodeDepth>5</NodeDepth>
-                  <AttributeCountPerElement>2</AttributeCountPerElement>
-                  <NamespaceCountPerElement>3</NamespaceCountPerElement>
-                  <ChildCount includeComment="true" includeElement="true" includeProcessingInstruction="true" includeText="true">3</ChildCount>
-               </StructureLimits>
-               <ValueLimits>
-                  <Text>150</Text>
-                  <Attribute>10</Attribute>
-                  <NamespaceURI>10</NamespaceURI>
-                  <Comment>10</Comment>
-                  <ProcessingInstructionData>10</ProcessingInstructionData>
-               </ValueLimits> 
-        </XMLThreatProtection>
+    
+    <XMLThreatProtection async="false" continueOnError="false" enabled="true" name="XML-Complexity-Attack-Protection">
+           <DisplayName>XML Complexity Attack Protection</DisplayName>
+           <NameLimits>
+              <Element>50</Element>
+              <Attribute>10</Attribute>
+              <NamespacePrefix>10</NamespacePrefix>
+              <ProcessingInstructionTarget>5</ProcessingInstructionTarget>
+           </NameLimits>
+           <Source>request</Source>
+           <StructureLimits>
+              <NodeDepth>5</NodeDepth>
+              <AttributeCountPerElement>2</AttributeCountPerElement>
+              <NamespaceCountPerElement>3</NamespaceCountPerElement>
+              <ChildCount includeComment="true" includeElement="true" includeProcessingInstruction="true" includeText="true">3</ChildCount>
+           </StructureLimits>
+           <ValueLimits>
+              <Text>150</Text>
+              <Attribute>10</Attribute>
+              <NamespaceURI>10</NamespaceURI>
+              <Comment>10</Comment>
+              <ProcessingInstructionData>10</ProcessingInstructionData>
+           </ValueLimits> 
+    </XMLThreatProtection>
 
     ```
    
@@ -133,11 +143,19 @@ _____
     
    **Policy Configuration**
     ```
-    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <JSONThreatProtection async="false" continueOnError="false" enabled="true" name="JSON-Complexity-Attack-Protection">
+       <DisplayName>JSON Complexity Attack Protection</DisplayName>
+       <ArrayElementCount>20</ArrayElementCount>
+       <ContainerDepth>10</ContainerDepth>
+       <ObjectEntryCount>15</ObjectEntryCount>
+       <ObjectEntryNameLength>50</ObjectEntryNameLength>
+       <Source>request</Source>
+       <StringValueLength>500</StringValueLength>
+    </JSONThreatProtection>
 
     ```
    
-   #### Add Access Control policy [![JSON Threat Protection policy][Policy_Icon_ACL]](http://docs.apigee.com/api-services/reference/access-control-policy)
+   #### Add Access Control policy [![Access Control Policy][Policy_Icon_ACL]](http://docs.apigee.com/api-services/reference/access-control-policy)
    This Policy blocks any call originating from black listed IP addresses by an Enterprise Standard Baseline Security Policy.
     <table>
         <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
@@ -147,6 +165,16 @@ _____
    **Policy Configuration**
     ```
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <AccessControl async="false" continueOnError="false" enabled="true" name="IP-Black-List-Filter">
+      <DisplayName>IP Black List Filter</DisplayName>
+      <IPRules noRuleMatchAction = "ALLOW">
+        <MatchRule action = "DENY">
+          <SourceAddress mask="24">10.10.20.0</SourceAddress>
+          <SourceAddress mask="24">10.10.30.0</SourceAddress>
+          <SourceAddress mask="24">10.10.40.0</SourceAddress>
+        </MatchRule>
+      </IPRules>
+    </AccessControl>
 
     ```
    
