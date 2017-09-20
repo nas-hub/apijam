@@ -1,8 +1,8 @@
 [Select_Shared_Flows]: ./media/Select_Shared_Flows.gif "Select the shared flow"
 [Shared_Flows_Enterprise_Baseline_Security]: ./media/Shared_Flows_Enterprise_Baseline_Security.gif "Create Enterprise_Baseline_Security Sharfed Flow"
-[Navigate_EditFlowHooks]: ./media/Navigate_EditFlowHooks.gif "Edit Flow Hooks"
-[Trace_AutoEnforced_ESSB]: ./media/Trace_AutoEnforced_ESSB.gif "Test Flow Hooks"
-[Navigate_SaveESBS_SharedFlow]: ./media/Navigate_SaveESBS_SharedFlow.gif "Save Flow Hooks"
+[Navigate_EditFlowHooks]: ./media/Navigate_EditFlowHooks.gif "Edit __** Flow Hooks**__"
+[Trace_AutoEnforced_ESSB]: ./media/Trace_AutoEnforced_ESSB.gif "Test __** Flow Hooks**__"
+[Navigate_SaveESBS_SharedFlow]: ./media/Navigate_SaveESBS_SharedFlow.gif "Save __** Flow Hooks**__"
 [Navigate_Environments]: ./media/Navigate_Environments.gif "Navigate to Environments"
 [SharedFlow_New_Pipeline]: ./media/SharedFlow_New_Pipeline.gif "New shared flow"
 [SharedPolicy_ESBS_Save]: ./media/SharedPolicy_ESBS_Save.gif "Save Shared Flow"
@@ -27,16 +27,10 @@
 [Policy_Icon_ExtractVariables]: http://d3grn7b5c5cnw5.cloudfront.net/sites/docs/files/icon_policy_extract-variable.jpg "Logo Title Text 2"
 
 
-
-[Okta_OktaGeneralPage]: ./media/OktaGeneralPage.gif "Okta General Tab"
-[Okta_OktaSSOPage]: ./media/OktaSSOPage.gif "Okta Sign-On Tab"
+# __** Flow Hooks**__ : Applying Enterprise Security Policies across all API-Proxies.
 
 
-
-# Flow Hooks : Applying Enterprise Security Policies accross all API-Proxies.
-
-
-*Duration : 45 mins*
+*Duration : 45 minutes*
 
 *Persona : API Team*
 _____
@@ -51,7 +45,7 @@ How can enterprise security team govern any updates to this security policy with
 
 _____
 # How can Apigee Edge help?
-Apigee [__**Flow Hook**__](http://docs.apigee.com/api-services/content/flow-hooks) fulfills this requirement by addressing above concerns. The Enterprise security team based on thier requirements come up with their enterprise standard security policy. This enterprise security policy materializes in Apigee as a __Shared Flow__. This __Shared Flow__ will be marked as a Flow Hook. Flow Hook once configured acts as global enforcers of this __Shared Flow__.
+Apigee [__**Flow Hook**__](http://docs.apigee.com/api-services/content/flow-hooks) fulfills this requirement by addressing above concerns. The Enterprise security team based on their requirements come up with their enterprise standard security policy. This enterprise security policy materializes in Apigee as a __Shared Flow__. This __Shared Flow__ will be marked as a Flow Hook. Flow Hook once configured acts as global enforcers of this __Shared Flow__.
 
 _____
 # Enterprise Standard Baseline Security Policy
@@ -122,7 +116,7 @@ _____
     ```
    
    #### Add Access Control policy [![JSON Threat Protection policy][Policy_Icon_ACL]](http://docs.apigee.com/api-services/reference/access-control-policy)
-   This Policy blocks any call originating from black listed IP addresses by an Enterprise Strandard Baseline Security Policy.
+   This Policy blocks any call originating from black listed IP addresses by an Enterprise Standard Baseline Security Policy.
     <table>
         <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
         <tr><td>4</td><td>__Access Control policy__</td><td>Shared Flow</td><td>IP Black List Filter</td><td>Enterprise Baseline policy for - Black list IP address filters</td></tr>
@@ -146,12 +140,12 @@ _____
     
     ![Shared Flow pipeline][Navigate_Environments] 
 
-5. Edit Flow Hooks: Navigate to Environments and Select the Flow Hooks tab.
+5. Edit __** Flow Hooks**__: Navigate to Environments and Select the __** Flow Hooks**__ tab.
    ![Shared Flow pipeline][Navigate_EditFlowHooks] 
 
-6. Save Flow Hooks
+6. Save __** Flow Hooks**__
    ![Shared Flow pipeline][Navigate_SaveESBS_SharedFlow] 
-    Once you Edit and connect the Pre-Proxy Flow Hook with the Shared Flow: The Shared Flow is in active and will be applied to all API Proxies accross __test__ environment.
+    Once you Edit and connect the Pre-Proxy Flow Hook with the Shared Flow: The Shared Flow is in active and will be applied to all API Proxies across __test__ environment.
 7. Now the enterprise standard baseline security policy is active; For you to test this, select any proxies you created as part of Core labs and navigate to the trace tab of that API-Proxy. Start the Trace session and invoke the API from within the Trace tab. Ensure that this API-Proxy is deployed in __Test__ environment. As shown in the figure below you should be see the enterprise standard baseline security policy applied automatically for this API-Proxy.
    ![Shared Flow pipeline][Trace_AutoEnforced_ESSB] 
 
@@ -161,7 +155,7 @@ _____
 
 # Lab Video
 
-If you prefer to learn by watching, here is a video lab on using Flow Hooks
+If you prefer to learn by watching, here is a video lab on using __** Flow Hooks**__
 
 [https://youtu.be/55-tYJSVnNE](https://youtu.be/55-tYJSVnNE)
 
@@ -173,14 +167,14 @@ If your enterprise security baseline policy had an egress rules, where and how w
 # Quiz
 
 1. Can you have a different Enterprise Security Policy per environment?
-2. Is it only security related policies that can be enforced by Flow Hooks?
+2. Is it only security related policies that can be enforced by __** Flow Hooks**__?
 3. What if a API developer login into edge UI and disconnects the Flow Hook from Shared Flow?
 
 
 
 # Summary
 
-In this lab, you learned how to use Flow Hooks to automatically enforce a __**Shared Flow**__ for all API Proxies in selected environment.
+In this lab, you learned how to use __** Flow Hooks**__ to automatically enforce a __**Shared Flow**__ for all API Proxies in selected environment.
 
 
 
