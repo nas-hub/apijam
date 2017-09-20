@@ -80,8 +80,6 @@ _____
    * Enter the Shared Flow name as:[Your Initials Here]_Enterprise_Baseline_Security 
    * Enter the Shared Flow description as : "Standard Auto Enforced Baseline Security Flow" 
     ![Select Shared Flows][Shared_Flows_Enterprise_Baseline_Security] 
-
-
    * Click the Develop Tab to create the policies for Shared Flow ![Shared Flow pipeline][SharedFlow_New_Pipeline]
 
    #### Add Threatening Content Protection Policy [![Threatening Content Protection][Policy_Icon_RegEx]](http://docs.apigee.com/api-services/reference/regular-expression-protection)
@@ -93,7 +91,7 @@ _____
 
    **Policy Configuration**
     ```
-    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+        <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
     ```
    
@@ -103,9 +101,10 @@ _____
         <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
         <tr><td>2</td><td>__XML Threat Protection policy__</td><td>Shared Flow</td><td>XML Complexity Attack Protection</td><td>Enterprise Baseline policy for - XML Complexity Attack Protection</td></tr>
     </table>
+    
    **Policy Configuration**
     ```
-    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+        <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
     ```
    
@@ -115,6 +114,7 @@ _____
         <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
         <tr><td>3</td><td>__JSON Threat Protection policy__</td><td>Shared Flow</td><td>JSON Complexity Attack Protection</td><td>Enterprise Baseline policy for - JSON Complexity Attack Protection</td></tr>
     </table>
+    
    **Policy Configuration**
     ```
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -127,6 +127,7 @@ _____
         <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
         <tr><td>4</td><td>__Access Control policy__</td><td>Shared Flow</td><td>IP Black List Filter</td><td>Enterprise Baseline policy for - Black list IP address filters</td></tr>
     </table>
+    
    **Policy Configuration**
     ```
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
