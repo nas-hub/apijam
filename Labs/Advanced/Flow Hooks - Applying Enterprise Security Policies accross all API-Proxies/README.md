@@ -82,8 +82,7 @@ _____
     ![Select Shared Flows][Shared_Flows_Enterprise_Baseline_Security] </br>
 
 
-   * Click the Develop Tab to create the policies for Shared Flow </br>
-     ![Shared Flow pipeline][SharedFlow_New_Pipeline]
+   * Click the Develop Tab to create the policies for Shared Flow ![Shared Flow pipeline][SharedFlow_New_Pipeline]
 
    #### Add Threatening Content Protection Policy [![Threatening Content Protection][Policy_Icon_RegEx]](http://docs.apigee.com/api-services/reference/regular-expression-protection)
    This policy protects all ingress API traffic from SQL Injections, XML and JSON Attacks as defines by Enterprise Security Baseline Policy.
