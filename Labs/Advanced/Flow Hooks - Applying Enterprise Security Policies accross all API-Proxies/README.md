@@ -1,8 +1,8 @@
 [Select_Shared_Flows]: ./media/Select_Shared_Flows.gif "Select the shared flow"
 [Shared_Flows_Enterprise_Baseline_Security]: ./media/Shared_Flows_Enterprise_Baseline_Security.gif "Create Enterprise_Baseline_Security Sharfed Flow"
-[Navigate_EditFlowHooks]: ./media/Navigate_EditFlowHooks.gif "Edit __** Flow Hooks**__"
-[Trace_AutoEnforced_ESSB]: ./media/Trace_AutoEnforced_ESSB.gif "Test __** Flow Hooks**__"
-[Navigate_SaveESBS_SharedFlow]: ./media/Navigate_SaveESBS_SharedFlow.gif "Save __** Flow Hooks**__"
+[Navigate_EditFlowHooks]: ./media/Navigate_EditFlowHooks.gif "Edit __**Flow Hooks**__"
+[Trace_AutoEnforced_ESSB]: ./media/Trace_AutoEnforced_ESSB.gif "Test __**Flow Hooks**__"
+[Navigate_SaveESBS_SharedFlow]: ./media/Navigate_SaveESBS_SharedFlow.gif "Save __**Flow Hooks**__"
 [Navigate_Environments]: ./media/Navigate_Environments.gif "Navigate to Environments"
 [SharedFlow_New_Pipeline]: ./media/SharedFlow_New_Pipeline.gif "New shared flow"
 [SharedPolicy_ESBS_Save]: ./media/SharedPolicy_ESBS_Save.gif "Save Shared Flow"
@@ -190,10 +190,10 @@ _____
     
     ![Shared Flow pipeline][Navigate_Environments] 
 
-5. Edit __** Flow Hooks**__: Navigate to Environments and Select the __** Flow Hooks**__ tab.
+5. Edit __**Flow Hooks**__: Navigate to Environments and Select the __**Flow Hooks**__ tab.
    ![Shared Flow pipeline][Navigate_EditFlowHooks] 
 
-6. Save __** Flow Hooks**__
+6. Save __**Flow Hooks**__
    ![Shared Flow pipeline][Navigate_SaveESBS_SharedFlow] 
     Once you Edit and connect the Pre-Proxy Flow Hook with the Shared Flow: The Shared Flow is in active and will be applied to all API Proxies across __test__ environment.
 7. Now the enterprise standard baseline security policy is active; For you to test this, select any proxies you created as part of Core labs and navigate to the trace tab of that API-Proxy. Start the Trace session and invoke the API from within the Trace tab. Ensure that this API-Proxy is deployed in __Test__ environment. As shown in the figure below you should be see the enterprise standard baseline security policy applied automatically for this API-Proxy.
@@ -205,7 +205,7 @@ _____
 
 # Lab Video
 
-If you prefer to learn by watching, here is a video lab on using __** Flow Hooks**__
+If you prefer to learn by watching, here is a video lab on using __**Flow Hooks**__
 
 [https://youtu.be/55-tYJSVnNE](https://youtu.be/55-tYJSVnNE)
 
@@ -217,14 +217,14 @@ If your enterprise security baseline policy had an egress rules, where and how w
 # Quiz
 
 1. Can you have a different Enterprise Security Policy per environment?
-2. Is it only security related policies that can be enforced by __** Flow Hooks**__?
+2. Is it only security related policies that can be enforced by __**Flow Hooks**__?
 3. What if a API developer login into edge UI and disconnects the Flow Hook from Shared Flow?
 
 
 
 # Summary
 
-In this lab, you learned how to use __** Flow Hooks**__ to automatically enforce a __**Shared Flow**__ for all API Proxies in selected environment.
+In this lab, you learned how to use __**Flow Hooks**__ to automatically enforce a __**Shared Flow**__ for all API Proxies in selected environment.
 
 
 
