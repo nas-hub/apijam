@@ -27,7 +27,7 @@
 [Policy_Icon_ExtractVariables]: http://d3grn7b5c5cnw5.cloudfront.net/sites/docs/files/icon_policy_extract-variable.jpg "Logo Title Text 2"
 
 
-# __** Flow Hooks**__ : Applying Enterprise Security Policies across all API-Proxies.
+# Flow Hooks: Applying Enterprise Security Policies across all API-Proxies.
 
 
 *Duration : 45 minutes*
@@ -98,7 +98,29 @@ _____
     
    **Policy Configuration**
     ```
-        <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+        <XMLThreatProtection async="false" continueOnError="false" enabled="true" name="XML-Complexity-Attack-Protection">
+               <DisplayName>XML Complexity Attack Protection</DisplayName>
+               <NameLimits>
+                  <Element>50</Element>
+                  <Attribute>10</Attribute>
+                  <NamespacePrefix>10</NamespacePrefix>
+                  <ProcessingInstructionTarget>5</ProcessingInstructionTarget>
+               </NameLimits>
+               <Source>request</Source>
+               <StructureLimits>
+                  <NodeDepth>5</NodeDepth>
+                  <AttributeCountPerElement>2</AttributeCountPerElement>
+                  <NamespaceCountPerElement>3</NamespaceCountPerElement>
+                  <ChildCount includeComment="true" includeElement="true" includeProcessingInstruction="true" includeText="true">3</ChildCount>
+               </StructureLimits>
+               <ValueLimits>
+                  <Text>150</Text>
+                  <Attribute>10</Attribute>
+                  <NamespaceURI>10</NamespaceURI>
+                  <Comment>10</Comment>
+                  <ProcessingInstructionData>10</ProcessingInstructionData>
+               </ValueLimits> 
+        </XMLThreatProtection>
 
     ```
    
