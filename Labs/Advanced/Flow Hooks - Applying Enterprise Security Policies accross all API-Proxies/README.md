@@ -1,15 +1,15 @@
-[Select_Shared_Flows]: ./Select_Shared_Flows.gif "Select the shared flow"
-[Shared_Flows_Enterprise_Baseline_Security]: ./Shared_Flows_Enterprise_Baseline_Security.gif "Create Enterprise_Baseline_Security Sharfed Flow"
-[Navigate_EditFlowHooks]: ./Navigate_EditFlowHooks.gif "Edit Flow Hooks"
-[Trace_AutoEnforced_ESSB]: ./Trace_AutoEnforced_ESSB.gif "Test Flow Hooks"
-[Navigate_SaveESBS_SharedFlow]: ./Navigate_SaveESBS_SharedFlow.gif "Save Flow Hooks"
-[Navigate_Environments]: ./Navigate_Environments.gif "Navigate to Environments"
-[SharedFlow_New_Pipeline]: ./SharedFlow_New_Pipeline.gif "New shared flow"
-[SharedPolicy_ESBS_Save]: ./SharedPolicy_ESBS_Save.gif "Save Shared Flow"
-[SharedPolicy_ESBS_Deploy]: ./SharedPolicy_ESBS_Deploy.gif "Deploy Shared Flow"
-[Create_KVM_Shared_Flows]: ./Create_KVM_Shared_Flows.gif "Create new shared flow"
-[RestClient_Create_KVM_Body]: ./RestClient_Create_KVM_Body.gif "Rest Client - Headers"
-[RestClient_Create_KVM_Headers]: ./RestClient_Create_KVM_Headers.gif "Rest Client - Body"
+[Select_Shared_Flows]: ./media/Select_Shared_Flows.gif "Select the shared flow"
+[Shared_Flows_Enterprise_Baseline_Security]: ./media/Shared_Flows_Enterprise_Baseline_Security.gif "Create Enterprise_Baseline_Security Sharfed Flow"
+[Navigate_EditFlowHooks]: ./media/Navigate_EditFlowHooks.gif "Edit Flow Hooks"
+[Trace_AutoEnforced_ESSB]: ./media/Trace_AutoEnforced_ESSB.gif "Test Flow Hooks"
+[Navigate_SaveESBS_SharedFlow]: ./media/Navigate_SaveESBS_SharedFlow.gif "Save Flow Hooks"
+[Navigate_Environments]: ./media/Navigate_Environments.gif "Navigate to Environments"
+[SharedFlow_New_Pipeline]: ./media/SharedFlow_New_Pipeline.gif "New shared flow"
+[SharedPolicy_ESBS_Save]: ./media/SharedPolicy_ESBS_Save.gif "Save Shared Flow"
+[SharedPolicy_ESBS_Deploy]: ./media/SharedPolicy_ESBS_Deploy.gif "Deploy Shared Flow"
+[Create_KVM_Shared_Flows]: ./media/Create_KVM_Shared_Flows.gif "Create new shared flow"
+[RestClient_Create_KVM_Body]: ./media/RestClient_Create_KVM_Body.gif "Rest Client - Headers"
+[RestClient_Create_KVM_Headers]: ./media/RestClient_Create_KVM_Headers.gif "Rest Client - Body"
 [Policy_Retrieve_OIDC_Info]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
 
 
@@ -28,8 +28,8 @@
 
 
 
-[Okta_OktaGeneralPage]: ./OktaGeneralPage.gif "Okta General Tab"
-[Okta_OktaSSOPage]: ./OktaSSOPage.gif "Okta Sign-On Tab"
+[Okta_OktaGeneralPage]: ./media/OktaGeneralPage.gif "Okta General Tab"
+[Okta_OktaSSOPage]: ./media/OktaSSOPage.gif "Okta Sign-On Tab"
 
 
 
