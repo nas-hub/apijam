@@ -36,7 +36,7 @@
 _____
 # Use Case
 
-Enterprise security team has defined a security policy for all the APIs in an enterprise. 
+An Enterprise wants to enforce its security policies team has defined a security policy for all the APIs in an enterprise. 
 This security policy acts as the enterprise standard security policy, 
 that will be governed by enterprise security team (Enhancements, updates etc).
 
@@ -69,7 +69,7 @@ _____
 # Instructions
 
 
-## Create a shared flow to Develop the above defined enterprise standard baseline security policy.
+## Create a new shared flow .
    1. In Edge UI, navigate to **Develop -> Shared Flows** 
     ![Select Shared Flows][Select_Shared_Flows] 
    2. Create new Shared Flow policy by clicking the + Shared Flow Button as shown in the figure above.
@@ -78,7 +78,9 @@ _____
     ![Select Shared Flows][Shared_Flows_Enterprise_Baseline_Security] 
    5. Click the Develop Tab to create the policies for Shared Flow ![Shared Flow pipeline][SharedFlow_New_Pipeline]
 
-   #### Add Threatening Content Protection Policy [![Threatening Content Protection][Policy_Icon_RegEx]](http://docs.apigee.com/api-services/reference/regular-expression-protection)
+## Develop the above defined enterprise standard baseline security policy
+####  As you are in advanced labs you should by now know how to add a new policy to your flow. You will create the below listed policies in the order they are listed, with provided name, description and policy configuration snippet.   
+   1. Add Threatening Content Protection Policy [![Threatening Content Protection][Policy_Icon_RegEx]](http://docs.apigee.com/api-services/reference/regular-expression-protection)
    This policy protects all ingress API traffic from SQL Injections, XML and JSON Attacks as defines by Enterprise Security Baseline Policy.
    <table>
     <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
@@ -100,7 +102,7 @@ _____
 
     ```
    
-   #### Add XML Threat Protection policy [![XML Threat Protection policy][Policy_Icon_XMLTCP]](http://docs.apigee.com/api-services/reference/xml-threat-protection-policy)
+   2. Add XML Threat Protection policy [![XML Threat Protection policy][Policy_Icon_XMLTCP]](http://docs.apigee.com/api-services/reference/xml-threat-protection-policy)
    This Policy protects all ingress API traffic from XML Complexity Attacks by enforcing the structural restrictions on XML payloads following the Enterprise Standard Baseline Policy.
     <table>
         <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
@@ -136,7 +138,7 @@ _____
 
     ```
    
-   #### Add JSON Threat Protection policy [![JSON Threat Protection policy][Policy_Icon_XMLTCP]](http://docs.apigee.com/api-services/reference/json-threat-protection-policy)
+   3. Add JSON Threat Protection policy [![JSON Threat Protection policy][Policy_Icon_XMLTCP]](http://docs.apigee.com/api-services/reference/json-threat-protection-policy)
    This Policy protects all ingress API traffic from JSON Complexity Attacks by enforcing the structural restrictions on JSON payloads following the Enterprise Standard Baseline Policy.
    <table>
         <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
@@ -157,7 +159,7 @@ _____
 
     ```
    
-   #### Add Access Control policy [![Access Control Policy][Policy_Icon_ACL]](http://docs.apigee.com/api-services/reference/access-control-policy)
+   4. Add Access Control policy [![Access Control Policy][Policy_Icon_ACL]](http://docs.apigee.com/api-services/reference/access-control-policy)
    This Policy blocks any call originating from black listed IP addresses by an Enterprise Standard Baseline Security Policy.
     <table>
         <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
@@ -179,26 +181,22 @@ _____
     </AccessControl>
 
     ```
-   
-
-2. Save the shared flow.
+   5. Save the shared flow.
     ![Shared Flow pipeline][SharedPolicy_ESBS_Save] 
-
-3. Deploy the shared flow.
+    
+   6. Deploy the shared flow.
     ![Shared Flow pipeline][SharedPolicy_ESBS_Deploy]   
     Now this shared flow is active and is available in the __test__ environment.
 
-4. Assign Shared Flow to a Flow-Hook
-    
+##  Mark this Shared Flow as a Flow-Hook
+   1. Assign Shared Flow to a Flow-Hook
     ![Shared Flow pipeline][Navigate_Environments] 
-
-5. Edit __**Flow Hooks**__: Navigate to Environments and Select the __**Flow Hooks**__ tab.
+   2. Edit __**Flow Hooks**__: Navigate to Environments and Select the __**Flow Hooks**__ tab.
    ![Shared Flow pipeline][Navigate_EditFlowHooks] 
-
-6. Save __**Flow Hooks**__
+   3. Save __**Flow Hooks**__
    ![Shared Flow pipeline][Navigate_SaveESBS_SharedFlow] 
     Once you Edit and connect the Pre-Proxy Flow Hook with the Shared Flow: The Shared Flow is in active and will be applied to all API Proxies across __test__ environment.
-7. Now the enterprise standard baseline security policy is active; For you to test this, select any proxies you created as part of Core labs and navigate to the trace tab of that API-Proxy. Start the Trace session and invoke the API from within the Trace tab. Ensure that this API-Proxy is deployed in __Test__ environment. As shown in the figure below you should be see the enterprise standard baseline security policy applied automatically for this API-Proxy.
+   4. Now the enterprise standard baseline security policy is active; For you to test this, select any proxies you created as part of Core labs and navigate to the trace tab of that API-Proxy. Start the Trace session and invoke the API from within the Trace tab. Ensure that this API-Proxy is deployed in __Test__ environment. As shown in the figure below you should be see the enterprise standard baseline security policy applied automatically for this API-Proxy.
    ![Shared Flow pipeline][Trace_AutoEnforced_ESSB] 
 
 
