@@ -36,7 +36,9 @@
 _____
 # Use Case
 
-Enterprise security team has defined a security policy for all the APIs published in an enterprise. This API policy acts as the enterprise standard security policy, that will be governed by enterprise security team (Enhancements, updates etc).
+Enterprise security team has defined a security policy for all the APIs in an enterprise. 
+This security policy acts as the enterprise standard security policy, 
+that will be governed by enterprise security team (Enhancements, updates etc).
 
 _____
 # Concerns
