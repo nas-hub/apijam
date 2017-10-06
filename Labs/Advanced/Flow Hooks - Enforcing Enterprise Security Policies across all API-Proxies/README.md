@@ -69,14 +69,14 @@ _____
 # Instructions
 
 
-1. Create a shared flow to Develop the above defined enterprise standard baseline security policy.
-   * In Edge UI, navigate to **Develop -> Shared Flows** 
+## Create a shared flow to Develop the above defined enterprise standard baseline security policy.
+   1. In Edge UI, navigate to **Develop -> Shared Flows** 
     ![Select Shared Flows][Select_Shared_Flows] 
-   * Create new Shared Flow policy by clicking the + Shared Flow Button as shown in the figure above.
-   * Enter the Shared Flow name as:[Your Initials Here]_Enterprise_Baseline_Security 
-   * Enter the Shared Flow description as : "Standard Auto Enforced Baseline Security Flow" 
+   2. Create new Shared Flow policy by clicking the + Shared Flow Button as shown in the figure above.
+   3. Enter the Shared Flow name as:[Your Initials Here]_Enterprise_Baseline_Security 
+   4. Enter the Shared Flow description as : "Standard Auto Enforced Baseline Security Flow" 
     ![Select Shared Flows][Shared_Flows_Enterprise_Baseline_Security] 
-   * Click the Develop Tab to create the policies for Shared Flow ![Shared Flow pipeline][SharedFlow_New_Pipeline]
+   5. Click the Develop Tab to create the policies for Shared Flow ![Shared Flow pipeline][SharedFlow_New_Pipeline]
 
    #### Add Threatening Content Protection Policy [![Threatening Content Protection][Policy_Icon_RegEx]](http://docs.apigee.com/api-services/reference/regular-expression-protection)
    This policy protects all ingress API traffic from SQL Injections, XML and JSON Attacks as defines by Enterprise Security Baseline Policy.
