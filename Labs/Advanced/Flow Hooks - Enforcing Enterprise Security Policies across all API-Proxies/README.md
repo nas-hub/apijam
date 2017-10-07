@@ -88,7 +88,7 @@ _____
    </table>
 
    **Policy Configuration**
-   ```xml
+```
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <RegularExpressionProtection async="false" continueOnError="false" enabled="true" name="Threatening-Content-Protection">
         <DisplayName>Threatening Content Protection</DisplayName>
@@ -100,7 +100,7 @@ _____
         </QueryParam>
     </RegularExpressionProtection>
         
-    ```
+```
    
    2. Add XML Threat Protection policy [![XML Threat Protection policy][Policy_Icon_XMLTCP]](http://docs.apigee.com/api-services/reference/xml-threat-protection-policy)
    This Policy protects all ingress API traffic from XML Complexity Attacks by enforcing the structural restrictions on XML payloads following the Enterprise Standard Baseline Policy.
