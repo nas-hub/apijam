@@ -89,16 +89,16 @@ _____
 
    **Policy Configuration**
    ```
-        <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-        <RegularExpressionProtection async="false" continueOnError="false" enabled="true" name="Threatening-Content-Protection">
-            <DisplayName>Threatening Content Protection</DisplayName>
-            <Properties/>
-            <Source>request</Source>
-            <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
-            <QueryParam name="query">
-                <Pattern>[\s]*(?i)((delete)|(exec)|(drop\s*table)|(insert)|(shutdown)|(update)|(\bor\b))</Pattern>
-            </QueryParam>
-        </RegularExpressionProtection>
+    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <RegularExpressionProtection async="false" continueOnError="false" enabled="true" name="Threatening-Content-Protection">
+        <DisplayName>Threatening Content Protection</DisplayName>
+        <Properties/>
+        <Source>request</Source>
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+        <QueryParam name="query">
+            <Pattern>[\s]*(?i)((delete)|(exec)|(drop\s*table)|(insert)|(shutdown)|(update)|(\bor\b))</Pattern>
+        </QueryParam>
+    </RegularExpressionProtection>
         
     ```
    
