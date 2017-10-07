@@ -79,16 +79,16 @@ _____
    5. Click the Develop Tab to create the policies for Shared Flow ![Shared Flow pipeline][SharedFlow_New_Pipeline]
 
 ## Develop the above defined enterprise standard baseline security policy
-####  As you are in advanced labs you should by now know how to add a new policy to your flow. You will create the below listed policies in the order they are listed, with provided name, description and policy configuration snippet.   
+####  As you are in advanced labs you should by now, know how to add a new policy to your flow. You will create the below listed policies in the order they are listed, with provided name, description and policy configuration snippet.   
    1. Add Threatening Content Protection Policy [![Threatening Content Protection][Policy_Icon_RegEx]](http://docs.apigee.com/api-services/reference/regular-expression-protection)
-   This policy protects all ingress API traffic from SQL Injections, XML and JSON Attacks as defines by Enterprise Security Baseline Policy.
+        This policy protects all ingress API traffic from SQL Injections, XML and JSON Attacks as defines by Enterprise Security Baseline Policy.
    <table>
     <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
     <tr><td>1</td><td>__Regular Expression Protection policy__</td><td>Shared Flow</td><td>Threatening Content Protection</td><td>Enterprise Baseline policy for - Threatening Content Protection</td></tr>
    </table>
 
    **Policy Configuration**
-    ```
+   ```
         <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
         <RegularExpressionProtection async="false" continueOnError="false" enabled="true" name="Threatening-Content-Protection">
             <DisplayName>Threatening Content Protection</DisplayName>
@@ -99,7 +99,7 @@ _____
                 <Pattern>[\s]*(?i)((delete)|(exec)|(drop\s*table)|(insert)|(shutdown)|(update)|(\bor\b))</Pattern>
             </QueryParam>
         </RegularExpressionProtection>
-
+        
     ```
    
    2. Add XML Threat Protection policy [![XML Threat Protection policy][Policy_Icon_XMLTCP]](http://docs.apigee.com/api-services/reference/xml-threat-protection-policy)
