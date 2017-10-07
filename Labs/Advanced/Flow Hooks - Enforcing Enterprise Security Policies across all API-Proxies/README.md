@@ -190,7 +190,10 @@ _____
     ![Shared Flow pipeline][SharedPolicy_ESBS_Deploy]   
    ##### Now this shared flow is active and is available in the __test__ environment.
 
+</br>
+
 ##  Mark this Shared Flow as a Flow-Hook
+
    1. Assign Shared Flow to a Flow-Hook
       ![Shared Flow pipeline][Navigate_Environments] 
    2. Edit __**Flow Hooks**__: Navigate to Environments and Select the __**Flow Hooks**__ tab.
@@ -202,7 +205,7 @@ _____
       ![Shared Flow pipeline][Trace_AutoEnforced_ESSB] 
 
 
-<br>
+</br>
 
 **Congratulations!**  You’ve done a cool thing here -- you developed a Enterprise Standard Baseline Security Policy and enabled it for an entire environment for an organization/enterprise. You also tested that the developed Flow Hook executes automatically for all API Proxies in that environment for your organization. Nice work!
 
