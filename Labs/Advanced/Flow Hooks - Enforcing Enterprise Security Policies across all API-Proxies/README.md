@@ -194,6 +194,8 @@ _____
 
 ##  Mark this Shared Flow as a Flow-Hook
 
+   0. Edit __**Flow Hooks**__: Navigate to Environments and Select the __**Flow Hooks**__ tab.
+      ![Shared Flow pipeline][Navigate_EditFlowHooks] 
    1. Assign Shared Flow to a Flow-Hook
       ![Shared Flow pipeline][Navigate_Environments] 
    2. Edit __**Flow Hooks**__: Navigate to Environments and Select the __**Flow Hooks**__ tab.
