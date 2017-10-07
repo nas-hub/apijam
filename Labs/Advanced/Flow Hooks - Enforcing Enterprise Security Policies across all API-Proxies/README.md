@@ -79,14 +79,11 @@ _____
    5. Click the Develop Tab to create the policies for Shared Flow ![Shared Flow pipeline][SharedFlow_New_Pipeline]
 <br>
 <br>
-|Test|What|Why|
-| ------------- |:-------------:| -----:|
-|yes|there it is |yes|
 
 ## Develop the above defined enterprise standard baseline security policy
 ####  As you are in advanced labs you should by now, know how to add a new policy to your flow. You will create the below listed policies in the order they are listed, with provided name, description and policy configuration snippet.   
    1. Add Threatening Content Protection Policy [![Threatening Content Protection][Policy_Icon_RegEx]](http://docs.apigee.com/api-services/reference/regular-expression-protection)
-        This policy protects all ingress API traffic from SQL Injections, XML and JSON Attacks as defines by Enterprise Security Baseline Policy.
+##### This policy protects all ingress API traffic from SQL Injections, XML and JSON Attacks as defines by Enterprise Security Baseline Policy.
 <table>
 <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
 <tr><td>1</td><td>__Regular Expression Protection policy__</td><td>Shared Flow</td><td>Threatening Content Protection</td><td>Enterprise Baseline policy for - Threatening Content Protection</td></tr>
@@ -108,7 +105,7 @@ _____
 ```
    
    2. Add XML Threat Protection policy [![XML Threat Protection policy][Policy_Icon_XMLTCP]](http://docs.apigee.com/api-services/reference/xml-threat-protection-policy)
-        This Policy protects all ingress API traffic from XML Complexity Attacks by enforcing the structural restrictions on XML payloads following the Enterprise Standard Baseline Policy.
+##### This Policy protects all ingress API traffic from XML Complexity Attacks by enforcing the structural restrictions on XML payloads following the Enterprise Standard Baseline Policy.
 <table>
     <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
     <tr><td>2</td><td>__XML Threat Protection policy__</td><td>Shared Flow</td><td>XML Complexity Attack Protection</td><td>Enterprise Baseline policy for - XML Complexity Attack Protection</td></tr>
@@ -144,7 +141,7 @@ _____
 ```
    
    3. Add JSON Threat Protection policy [![JSON Threat Protection policy][Policy_Icon_XMLTCP]](http://docs.apigee.com/api-services/reference/json-threat-protection-policy)
-   This Policy protects all ingress API traffic from JSON Complexity Attacks by enforcing the structural restrictions on JSON payloads following the Enterprise Standard Baseline Policy.
+##### This Policy protects all ingress API traffic from JSON Complexity Attacks by enforcing the structural restrictions on JSON payloads following the Enterprise Standard Baseline Policy.
    <table>
         <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
         <tr><td>3</td><td>__JSON Threat Protection policy__</td><td>Shared Flow</td><td>JSON Complexity Attack Protection</td><td>Enterprise Baseline policy for - JSON Complexity Attack Protection</td></tr>
