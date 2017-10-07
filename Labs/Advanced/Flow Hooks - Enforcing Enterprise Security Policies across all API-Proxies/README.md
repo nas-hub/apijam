@@ -192,16 +192,17 @@ _____
 
 ##  Mark this Shared Flow as a Flow-Hook
    1. Assign Shared Flow to a Flow-Hook
-    ![Shared Flow pipeline][Navigate_Environments] 
+      ![Shared Flow pipeline][Navigate_Environments] 
    2. Edit __**Flow Hooks**__: Navigate to Environments and Select the __**Flow Hooks**__ tab.
-   ![Shared Flow pipeline][Navigate_EditFlowHooks] 
+      ![Shared Flow pipeline][Navigate_EditFlowHooks] 
    3. Save __**Flow Hooks**__
-   ![Shared Flow pipeline][Navigate_SaveESBS_SharedFlow] 
+      ![Shared Flow pipeline][Navigate_SaveESBS_SharedFlow] 
     Once you Edit and connect the Pre-Proxy Flow Hook with the Shared Flow: The Shared Flow is in active and will be applied to all API Proxies across __test__ environment.
    4. Now the enterprise standard baseline security policy is active; For you to test this, select any proxies you created as part of Core labs and navigate to the trace tab of that API-Proxy. Start the Trace session and invoke the API from within the Trace tab. Ensure that this API-Proxy is deployed in __Test__ environment. As shown in the figure below you should be see the enterprise standard baseline security policy applied automatically for this API-Proxy.
-   ![Shared Flow pipeline][Trace_AutoEnforced_ESSB] 
+      ![Shared Flow pipeline][Trace_AutoEnforced_ESSB] 
 
 
+<br>
 
 **Congratulations!**  You’ve done a cool thing here -- you developed a Enterprise Standard Baseline Security Policy and enabled it for an entire environment for an organization/enterprise. You also tested that the developed Flow Hook executes automatically for all API Proxies in that environment for your organization. Nice work!
 
