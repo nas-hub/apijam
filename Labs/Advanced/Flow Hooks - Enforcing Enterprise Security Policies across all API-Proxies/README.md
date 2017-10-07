@@ -77,6 +77,10 @@ _____
    4. Enter the Shared Flow description as : "Standard Auto Enforced Baseline Security Flow" 
     ![Select Shared Flows][Shared_Flows_Enterprise_Baseline_Security] 
    5. Click the Develop Tab to create the policies for Shared Flow ![Shared Flow pipeline][SharedFlow_New_Pipeline]
+<br>
+<br>
+|Test|What|
+|yes|there it is |
 
 ## Develop the above defined enterprise standard baseline security policy
 ####  As you are in advanced labs you should by now, know how to add a new policy to your flow. You will create the below listed policies in the order they are listed, with provided name, description and policy configuration snippet.   
