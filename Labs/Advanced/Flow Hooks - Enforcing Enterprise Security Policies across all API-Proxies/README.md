@@ -88,7 +88,7 @@ _____
    </table>
 
    **Policy Configuration**
-   ```
+   ```xml
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <RegularExpressionProtection async="false" continueOnError="false" enabled="true" name="Threatening-Content-Protection">
         <DisplayName>Threatening Content Protection</DisplayName>
