@@ -239,4 +239,4 @@ In this lab, you learned how to use __**Flow Hooks**__ to automatically enforce 
 
 # Rate this lab
 
-How did you link this lab? Rate [here](https://docs.google.com/).
+How did you link this lab? Rate [here](https://docs.google.com/forms/d/e/1FAIpQLSfgFlU4hvPxhH7xh1R3UsqVYInoauyZGB_yf2MpKQ0R_FVQmw/viewform).
