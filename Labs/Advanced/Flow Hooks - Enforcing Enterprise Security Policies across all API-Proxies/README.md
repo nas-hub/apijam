@@ -87,8 +87,8 @@ _____
    ##### This policy protects all ingress API traffic from SQL Injections as defines by Enterprise Security Baseline Policy.
    Add Threatening Content Protection Policy providing below Name and Description
 <table>
-<tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
-<tr><td>1</td><td>Regular Expression Protection policy</td><td>Shared Flow</td><td>Threatening Content Protection</td><td>Enterprise Baseline policy for - Threatening Content Protection</td></tr>
+<tr><td>Order</td><td>Policy Type</td><td>Policy Name</td><td>Policy Description</td></tr>
+<tr><td>1</td><td>Regular Expression Protection policy</td><td>Threatening Content Protection</td><td>Enterprise Baseline policy for - Threatening Content Protection</td></tr>
 </table>
 
    **Policy Configuration** (Copy this configuration and replace it with the default policy configuration)
@@ -110,8 +110,8 @@ _____
    ##### This Policy protects all ingress API traffic from XML Complexity Attacks by enforcing the structural restrictions on XML payloads following the Enterprise Standard Baseline Policy.
    Add XML Threat Protection Policy providing below Name and Description
 <table>
-    <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
-    <tr><td>2</td><td>XML Threat Protection policy</td><td>Shared Flow</td><td>XML Complexity Attack Protection</td><td>Enterprise Baseline policy for - XML Complexity Attack Protection</td></tr>
+    <tr><td>Order</td><td>Policy Type</td><td>Policy Name</td><td>Policy Description</td></tr>
+    <tr><td>2</td><td>XML Threat Protection policy</td><td>XML Complexity Attack Protection</td><td>Enterprise Baseline policy for - XML Complexity Attack Protection</td></tr>
 </table>
     
    **Policy Configuration**(Copy this configuration and replace it with the default policy configuration)
@@ -147,8 +147,8 @@ _____
    ##### This Policy protects all ingress API traffic from JSON Complexity Attacks by enforcing the structural restrictions on JSON payloads following the Enterprise Standard Baseline Policy.
    Add JSON Threat Protection Policy providing below Name and Description
    <table>
-        <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
-        <tr><td>3</td><td>JSON Threat Protection policy</td><td>Shared Flow</td><td>JSON Complexity Attack Protection</td><td>Enterprise Baseline policy for - JSON Complexity Attack Protection</td></tr>
+        <tr><td>Order</td><td>Policy Type</td><td>Policy Name</td><td>Policy Description</td></tr>
+        <tr><td>3</td><td>JSON Threat Protection policy</td><td>JSON Complexity Attack Protection</td><td>Enterprise Baseline policy for - JSON Complexity Attack Protection</td></tr>
     </table>
     
    **Policy Configuration**(Copy this configuration and replace it with the default policy configuration)
@@ -169,8 +169,8 @@ _____
    ##### This Policy blocks any call originating from black listed IP addresses by an Enterprise Standard Baseline Security Policy.
    Add Access Control Policy providing below Name and Description
    <table>
-        <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
-        <tr><td>4</td><td>Access Control policy</td><td>Shared Flow</td><td>IP Black List Filter</td><td>Enterprise Baseline policy for - Black list IP address filters</td></tr>
+        <tr><td>Order</td><td>Policy Type</td><td>Policy Name</td><td>Policy Description</td></tr>
+        <tr><td>4</td><td>Access Control policy</td><td>IP Black List Filter</td><td>Enterprise Baseline policy for - Black list IP address filters</td></tr>
    </table>
     
    **Policy Configuration**(Copy this configuration and replace it with the default policy configuration)
