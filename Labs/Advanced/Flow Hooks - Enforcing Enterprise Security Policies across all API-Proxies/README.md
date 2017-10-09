@@ -3,7 +3,8 @@
 [Navigate_EditFlowHooks]: ./media/Navigate_EditFlowHooks.gif "Edit __**Flow Hooks**__"
 [Trace_AutoEnforced_ESSB]: ./media/Trace_AutoEnforced_ESSB.gif "Test __**Flow Hooks**__"
 [Navigate_SaveESBS_SharedFlow]: ./media/Navigate_SaveESBS_SharedFlow.gif "Save __**Flow Hooks**__"
-[Navigate_Environments]: ./media/Navigate_Environments.gif "Navigate to Environments"
+[Navigate_Environments_0]: ./media/Navigate_Environments.gif "Navigate to Environments"
+[Navigate_Environments]: ./media/Navigate_Environments_1.gif "Navigate to Environments"
 [SharedFlow_New_Pipeline]: ./media/SharedFlow_New_Pipeline.gif "New shared flow"
 [SharedPolicy_ESBS_Save]: ./media/SharedPolicy_ESBS_Save.gif "Save Shared Flow"
 [SharedPolicy_ESBS_Deploy]: ./media/SharedPolicy_ESBS_Deploy.gif "Deploy Shared Flow"
@@ -84,12 +85,13 @@ _____
 ####  As you are in advanced labs you should by now, know how to add a new policy to your flow. You will create the below listed policies in the order they are listed, with provided name, description and policy configuration snippet.   
    1. Add Threatening Content Protection Policy [![Threatening Content Protection][Policy_Icon_RegEx]](http://docs.apigee.com/api-services/reference/regular-expression-protection)
    ##### This policy protects all ingress API traffic from SQL Injections, XML and JSON Attacks as defines by Enterprise Security Baseline Policy.
+   Add Threatening Content Protection Policy, with below Name and Description
 <table>
 <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
 <tr><td>1</td><td>__Regular Expression Protection policy__</td><td>Shared Flow</td><td>Threatening Content Protection</td><td>Enterprise Baseline policy for - Threatening Content Protection</td></tr>
 </table>
 
-   **Policy Configuration**
+   **Policy Configuration** (Copy this configuration and replace it with the default policy configuration)
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <RegularExpressionProtection async="false" continueOnError="false" enabled="true" name="Threatening-Content-Protection">
@@ -163,10 +165,10 @@ _____
    
    4. Add Access Control policy [![Access Control Policy][Policy_Icon_ACL]](http://docs.apigee.com/api-services/reference/access-control-policy)
    ##### This Policy blocks any call originating from black listed IP addresses by an Enterprise Standard Baseline Security Policy.
-    <table>
+   <table>
         <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
         <tr><td>4</td><td>__Access Control policy__</td><td>Shared Flow</td><td>IP Black List Filter</td><td>Enterprise Baseline policy for - Black list IP address filters</td></tr>
-    </table>
+   </table>
     
    **Policy Configuration**
 ```
