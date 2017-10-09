@@ -84,11 +84,11 @@ _____
 ## Develop the above defined enterprise standard baseline security policy
 ####  As you are in advanced labs you should by now, know how to add a new policy to your flow. You will create the below listed policies in the order they are listed, with provided name, description and policy configuration snippet.   
    1. Add Threatening Content Protection Policy [![Threatening Content Protection][Policy_Icon_RegEx]](http://docs.apigee.com/api-services/reference/regular-expression-protection)
-   ##### This policy protects all ingress API traffic from SQL Injections, XML and JSON Attacks as defines by Enterprise Security Baseline Policy.
-   Add Threatening Content Protection Policy, with below Name and Description
+   ##### This policy protects all ingress API traffic from SQL Injections as defines by Enterprise Security Baseline Policy.
+   Add Threatening Content Protection Policy providing below Name and Description
 <table>
 <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
-<tr><td>1</td><td>__Regular Expression Protection policy__</td><td>Shared Flow</td><td>Threatening Content Protection</td><td>Enterprise Baseline policy for - Threatening Content Protection</td></tr>
+<tr><td>1</td><td>Regular Expression Protection policy</td><td>Shared Flow</td><td>Threatening Content Protection</td><td>Enterprise Baseline policy for - Threatening Content Protection</td></tr>
 </table>
 
    **Policy Configuration** (Copy this configuration and replace it with the default policy configuration)
@@ -108,12 +108,13 @@ _____
    
    2. Add XML Threat Protection policy [![XML Threat Protection policy][Policy_Icon_XMLTCP]](http://docs.apigee.com/api-services/reference/xml-threat-protection-policy)
    ##### This Policy protects all ingress API traffic from XML Complexity Attacks by enforcing the structural restrictions on XML payloads following the Enterprise Standard Baseline Policy.
+   Add XML Threat Protection Policy providing below Name and Description
 <table>
     <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
-    <tr><td>2</td><td>__XML Threat Protection policy__</td><td>Shared Flow</td><td>XML Complexity Attack Protection</td><td>Enterprise Baseline policy for - XML Complexity Attack Protection</td></tr>
+    <tr><td>2</td><td>XML Threat Protection policy</td><td>Shared Flow</td><td>XML Complexity Attack Protection</td><td>Enterprise Baseline policy for - XML Complexity Attack Protection</td></tr>
 </table>
     
-   **Policy Configuration**
+   **Policy Configuration**(Copy this configuration and replace it with the default policy configuration)
 ```
     
 <XMLThreatProtection async="false" continueOnError="false" enabled="true" name="XML-Complexity-Attack-Protection">
@@ -144,12 +145,13 @@ _____
    
    3. Add JSON Threat Protection policy [![JSON Threat Protection policy][Policy_Icon_XMLTCP]](http://docs.apigee.com/api-services/reference/json-threat-protection-policy)
    ##### This Policy protects all ingress API traffic from JSON Complexity Attacks by enforcing the structural restrictions on JSON payloads following the Enterprise Standard Baseline Policy.
+   Add JSON Threat Protection Policy providing below Name and Description
    <table>
         <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
-        <tr><td>3</td><td>__JSON Threat Protection policy__</td><td>Shared Flow</td><td>JSON Complexity Attack Protection</td><td>Enterprise Baseline policy for - JSON Complexity Attack Protection</td></tr>
+        <tr><td>3</td><td>JSON Threat Protection policy</td><td>Shared Flow</td><td>JSON Complexity Attack Protection</td><td>Enterprise Baseline policy for - JSON Complexity Attack Protection</td></tr>
     </table>
     
-   **Policy Configuration**
+   **Policy Configuration**(Copy this configuration and replace it with the default policy configuration)
 ```
 <JSONThreatProtection async="false" continueOnError="false" enabled="true" name="JSON-Complexity-Attack-Protection">
    <DisplayName>JSON Complexity Attack Protection</DisplayName>
@@ -165,12 +167,13 @@ _____
    
    4. Add Access Control policy [![Access Control Policy][Policy_Icon_ACL]](http://docs.apigee.com/api-services/reference/access-control-policy)
    ##### This Policy blocks any call originating from black listed IP addresses by an Enterprise Standard Baseline Security Policy.
+   Add Access Control Policy providing below Name and Description
    <table>
         <tr><td>Order</td><td>Policy Type</td><td>Flow Type</td><td>Policy Name</td><td>Policy Description</td></tr>
-        <tr><td>4</td><td>__Access Control policy__</td><td>Shared Flow</td><td>IP Black List Filter</td><td>Enterprise Baseline policy for - Black list IP address filters</td></tr>
+        <tr><td>4</td><td>Access Control policy</td><td>Shared Flow</td><td>IP Black List Filter</td><td>Enterprise Baseline policy for - Black list IP address filters</td></tr>
    </table>
     
-   **Policy Configuration**
+   **Policy Configuration**(Copy this configuration and replace it with the default policy configuration)
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AccessControl async="false" continueOnError="false" enabled="true" name="IP-Black-List-Filter">
