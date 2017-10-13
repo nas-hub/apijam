@@ -47,34 +47,44 @@ Apigee Edge API Proxy created in core lab exercise. If not, jump back to "API De
 8. You have configured a KVM and added an attribute entry that will be used in the API Proxy to dynamically configure the amount of processing stats sent back along with Response. 
 
 
+## API Proxy Configuration
 
-4. Click on **Develop** tab to access API Proxy development dashboard.
+1. Select the {your-initials}_Employees_Proxy API proxy that you created in the Core Labs.
 
-![image alt text](./media/image_4.png)
+2. Click on **Develop** tab of {your-initials}_Employees_Proxy API proxy.
 
-![image alt text](./media/image_5.png)
+![image alt text](./media/Click_Develop_Tab.gif)
 
-5. Click on **PreFlow** under Proxy Endpoint default, Click on **+Step** on top of Request flow to attach a spike arrest policy.
+3. Click on **+Step** of the response of PreFlow as shown in the image below.
 
-![image alt text](./media/image_6_updated.png)
+![image alt text](./media/Click_Response_Step.gif)
 
-6. Select **Spike Arrest Policy**. Click on **Add** button to add spike arrest policy to proxy endpoint preflow request.
+3. Select the __KeyValueMapOperations__ Policy from menu in left. Enter the name of the Policy as __LookUp_Dynamic_Proxy_Config__ and Click **Add** button.
 
-![image alt text](./media/image_7.png)
+![image alt text](./media/Add_KVM_Policy.gif)
 
-7. You can notice Spike Arrest policy icon on top of request flow that shows where exactly policy is attached and policy XML configuration below in editor.
+3. Similarly Click on **+Step** one more time and add __AssignMessage__ Policy. Enter the name as "Add Processing Stats In Header" and Click **Add** button.
 
-![image alt text](./media/image_8.png)
+![image alt text](./media/Add_Assign_Message_Policy.gif)
 
-8. Change the Policy XML configuration to below code & update the rate to 12pm.
-```
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<SpikeArrest async="false" continueOnError="false" enabled="true" name="Spike-Arrest-1">
-    <DisplayName>Spike Arrest-1</DisplayName>
-    <Properties/>
-    <Rate>12pm</Rate>
-</SpikeArrest>
-```
+
+4. Click on **Default** under Proxy Endpoint
+
+![image alt text](./media/Click_Default_Flow.gif)
+
+
+5. Add a Conditional Statement on the "Add Processing Stats In Header" Policy.
+
+![image alt text](./media/Add_Conditional_Tag.gif)
+
+
+5. Click on **Save** buton.
+
+![image alt text](./media/Save_Employee_Policy.png)
+
+5. Click on **Deploy** buton, and deploy to test.
+
+![image alt text](./media/Deploy_To_Test.png)
 
 Think of Spike Arrest as a way to generally protect against traffic spikes rather than as a way to limit traffic to a specific number of requests. Your APIs and backend can handle a certain amount of traffic, and the Spike Arrest policy helps you smooth traffic to the general amounts you want.
 
