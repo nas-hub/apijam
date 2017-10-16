@@ -103,9 +103,7 @@ Apigee Edge API Proxy created in core lab exercise. If not, jump back to "API De
 
 **Congratulations!** You have added dynamic behaviors to your API Proxy leveraging the KVM store.
 
-# Earn Extra-points
 
-TODO
 
 # Quiz
 
