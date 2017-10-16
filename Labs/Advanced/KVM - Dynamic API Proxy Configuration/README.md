@@ -89,11 +89,11 @@ Apigee Edge API Proxy created in core lab exercise. If not, jump back to "API De
 
 ## Test the API policy configuration
 
-1. Open the  [Apigee Rest Client](https://apigee-rest-client.appspot.com/)  and run the Employee Proxy URL. Note that you get extra HTTP 
+1. Open the  [Apigee Rest Client](https://apigee-rest-client.appspot.com/)  and run the above modified Employee Proxy URL. Note that you get extra HTTP Headers capturing processing stats as shown in figure below: 
 
 ![image alt text](./media/Test_Screen_One.gif)
 
-2. Now change the attribute value to "NONE" using the below curl command.
+2. Now change the attribute value to "NONE" using the below curl command. Note: Replace the apigee_userid:apigee_password with your Apigee userId and Apigee password.
     ```
     curl -X POST --header "Content-Type: application/json" -u apigee_userid:apigee_password -d '{"name" : "include_processing_stats_in_response","value" : "NONE"}' "https://api.enterprise.apigee.com/v1/organizations/naseerm/environments/test/keyvaluemaps/DynamicProxyConfig/entries/include_processing_stats_in_response"
     ```
