@@ -89,13 +89,19 @@ Apigee Edge API Proxy created in core lab exercise. If not, jump back to "API De
 
 ## Test the API policy configuration
 
-1. Open the  [Apigee Rest Client](https://apigee-rest-client.appspot.com/)  and run the Employee Proxy URL.
+1. Open the  [Apigee Rest Client](https://apigee-rest-client.appspot.com/)  and run the Employee Proxy URL. Note that you get extra HTTP 
 
 ![image alt text](./media/Test_Screen_One.gif)
 
-2. TODO...
+2. Now change the attribute value to "NONE" using the below curl command.
+    ```
+    curl -X POST --header "Content-Type: application/json" -u apigee_userid:apigee_password -d '{"name" : "include_processing_stats_in_response","value" : "NONE"}' "https://api.enterprise.apigee.com/v1/organizations/naseerm/environments/test/keyvaluemaps/DynamicProxyConfig/entries/include_processing_stats_in_response"
+    ```
+    Ensure the response for the above curl command is __HTTP 200 OK__
 
-*Congratulations!*...You have added 
+3. Repeat the above call in Step 1 and this time you will not see the stats related  HTTP Headers in the response. Note that there might be a slight delay for the KVM values to get refreshed.  
+
+**Congratulations!** You have added dynamic behaviors to your API Proxy leveraging the KVM store.
 
 # Earn Extra-points
 
@@ -103,21 +109,16 @@ TODO
 
 # Quiz
 
-1. TODO
+1. Can the same approach be used to dynamically enable/disable detailed message logging? If yes, how?
 
-2. TODO
+2. How can you add dynamic processing to all API Proxies present in an environment?
 
 # Summary
 
-TODO
+By leveraging KVM attributes and Conditional Tags you added dynamic processing capability to your proxy.
 
-# References
-
-* Useful Apigee documentation links on Traffic Management & Spike Arrest Policy  - 
-
-     
 
 # Rate this lab
 
-How did you like this lab? Rate [here](https://goo.gl/forms/oivm4A6DqBKM9AEJ3).
+How did you like this lab? Rate [here](https://docs.google.com/forms/d/e/1FAIpQLSee9-QOxlM3T4WY3xkYBibvBotWwQ-fejZapRfRvIBArYA0Hg/viewform).
 
